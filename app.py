@@ -10,6 +10,10 @@ def random_clicks(n=5):
     return ["click"] * randint(1, n)
 
 def random_url():
+    if randint(0, 999) == 0:
+        # Good ol' Rick
+        return "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
     parts = []
     # subdomains
     for _ in range(randint(0, 3)):

@@ -3,10 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ title }}</title>
+    <style>
+      .cta {
+        background-color: #2DB21A;
+        color: white;
+        font-family: helvetica, arial, sans-serif;
+        text-decoration: none;
+        font-size: 3em;
+        display: block;
+        width: 200px;
+        padding: 30px 60px;
+        text-align: center;
+        border-radius: 4px;
+        margin: 80px auto 0;
+      }
+      .cta:active {
+        margin-top: 82px;
+      }
+    </style>
   </head>
   <body>
-    {#<a href="{{ next_url }}">Click!</a>#}
-    <code>{{ next_url }}</code>
+    <a class="cta" href="{{ next_url }}">Click!</a>
   </body>
 </html>
 
